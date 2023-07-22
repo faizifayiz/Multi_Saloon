@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/regbg"
+    tools:context=".FeedbackActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/feedback"/>
+
+    <EditText
+        android:id="@+id/ShopnameET"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Shop Name"
+        android:padding="10dp"
+        android:background="@drawable/rect_grey"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/feedbackEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Enter Your Feedback"
+        android:gravity="start"
+        android:background="@drawable/rect_grey"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/submitFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Submit Feedback"
+        android:padding="15dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppoinmentsActivity">
+
+    <include layout="@layout/toolbar_header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_grey"
+            android:text="type"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_grey"
+            android:text="amount"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"/>
+
+
+
+        <EditText
+            android:id="@+id/timeview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time Slot"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_grey"/>
+
+        <LinearLayout
+            android:id="@+id/calenderLL"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_grey">
+
+            <ImageView
+                android:id="@+id/dateCalender"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_calendar"/>
+
+            <TextView
+                android:id="@+id/DateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of appointment"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:padding="14dp"
+                android:textSize="18dp"
+                android:background="#00000000"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bookBT"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+
+</LinearLayout>
